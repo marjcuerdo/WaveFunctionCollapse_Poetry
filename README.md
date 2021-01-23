@@ -74,7 +74,9 @@ For example, specifying the `couplet` poetry type would look like below (using t
 
 ## Modifying GIF output
 
-Similarly, this can be done for `makegif.py` by entering:
+Similarly, this can be done for `makegif.py`. 
+
+For example, specifying the `couplet` poetry type would look like below (again using the `harrypotter1.txt` file):
 
   `python makegif.py input/harrypotter1.txt 300 output/hp1_couplet.gif couplet`
   
