@@ -43,19 +43,43 @@ or
 ## Generate poetry text file
 
 * Navigate `cd` to where you unzipped the `wfc_poetry` folder.
-* Enter the following code:
+* Enter the following code (defaults to `ballad` format):
 
-  `python ballad.py [input/yourTextFileName.txt] [output/yourNewPoemTextFile.txt]`
+  `python ballad.py [input/yourTextFileName.txt]`
 
 ## Generate animated GIF
 
 * Enter the following code:
 
-  `python makegif.py [input/yourTextFileName.txt] [numberOfLines] [output/yourGifFileName.gif]`
+  `python makegif.py [input/yourTextFileName.txt] [numberOfLinesToAnalyze] [output/yourGifFileName.gif]`
 
-# Rules and constraints
+# More information
 
+## Modifying text output
+We updated `ballad.py` to receive the chosen poetry type from the user, if they want a format other than the default `ballad`.
 
-# Process for good output
+  `sonnet = iambic(5, 'ababcdcdefefgg')`  
+  `petrarch = iambic(5, 'abbaabbacdecde')`  
+  `ottava = iambic(5, 'abababcc')`  
+  `couplet = iambic(5, 'aa')`  
+  `ballad = iambic(4, 'a') + iambic(3, 'b') + iambic(4, 'a') + iambic(3, 'b')`   
+  `verse = iambic(5, 'abcb')`  
+  `blank = iambic(5, 'abcd')` 
+
+For example, specifying the `couplet` poetry type would look like below (using the `harrypotter1.txt` file):
+  
+  `python ballad.py input/harrypotter1.txt couplet`
+  
+[Harry Potter Couplet Example - Full Output Text File](https://github.com/marjcuerdo/wfc_poetry/blob/main/output/output_hp1_couplet.txt)  
+
+## Modifying GIF output
+
+Similarly, this can be done for `makegif.py` by entering:
+
+  `python makegif.py input/harrypotter1.txt 300 output/hp1_couplet.gif couplet`
+  
+This results in:
+
+![GIF of HP Couplet](https://github.com/marjcuerdo/wfc_poetry/blob/main/output/hp1_couplet.gif)
 
 
