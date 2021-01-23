@@ -10,10 +10,11 @@ It mashes up sentence fragments from a given text file to produce poems with fix
 # Example output
 <img src="https://raw.githubusercontent.com/marjcuerdo/wfc_poetry/main/output/hp.png" width="362" height="542">
 
-[Full Output Text File](https://raw.githubusercontent.com/marjcuerdo/wfc_poetry/main/output/output_harrypotter1_1.txt)
+[Harry Potter Example - Full Output Text File](https://raw.githubusercontent.com/marjcuerdo/wfc_poetry/main/output/output_harrypotter1_1.txt)  
+[Holy Bible Example - Full Output Text File](https://raw.githubusercontent.com/marjcuerdo/wfc_poetry/main/output/output_bible_1.txt)
 
 It can also animate the process:  
-![GIF of Harry Potter Output](https://raw.githubusercontent.com/marjcuerdo/wfc_poetry/main/output/hp.gif)
+![GIF of Holy Bible Output](https://raw.githubusercontent.com/marjcuerdo/wfc_poetry/main/output/bible.gif)
 
 # Instructions 
 
