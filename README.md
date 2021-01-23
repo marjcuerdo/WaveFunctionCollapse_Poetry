@@ -56,7 +56,7 @@ or
 # More information
 
 ## Modifying text output
-We updated `ballad.py` to receive the chosen poetry type from the user, if they want a format other than the default `ballad`.
+We updated `ballad.py` to receive the chosen poetry type from the user through the command line without changing the code, if they want a format other than the default `ballad`.
 
   `sonnet = iambic(5, 'ababcdcdefefgg')`  
   `petrarch = iambic(5, 'abbaabbacdecde')`  
@@ -74,7 +74,7 @@ For example, specifying the `couplet` poetry type would look like below (using t
 
 ## Modifying GIF output
 
-Similarly, this can be done for `makegif.py`. 
+Similarly, this can now be done for `makegif.py`. 
 
 For example, specifying the `couplet` poetry type would look like below (again using the `harrypotter1.txt` file):
 
