@@ -31,26 +31,26 @@ or
 
 * Copy and paste the following commands and run them one at a time:
 
-`curl https://bootstrap.pypa.io/ez_setup.py -o - | sudo python`
+  `curl https://bootstrap.pypa.io/ez_setup.py -o - | sudo python`
 
-`sudo python get-pip.py`
+  `sudo python get-pip.py`
 
 * Install required packages to run the algorithm
 
-`pip install -r requirements.txt`
+  `pip install -r requirements.txt`
 
 ## Generate poetry text file
 
 * Navigate `cd` to where you unzipped the `wfc_poetry` folder.
 * Enter the following code:
 
-`python ballad.py [input/yourTextFileName.txt] [output/yourNewPoemTextFile.txt]`
+  `python ballad.py [input/yourTextFileName.txt] [output/yourNewPoemTextFile.txt]`
 
 ## Generate animated GIF
 
 * Enter the following code:
 
-`python makegif.py [input/yourTextFileName.txt] [numberOfLines] [output/yourGifFileName.gif]`
+  `python makegif.py [input/yourTextFileName.txt] [numberOfLines] [output/yourGifFileName.gif]`
 
 # Rules and constraints
 
