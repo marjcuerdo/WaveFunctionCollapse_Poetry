@@ -8,7 +8,7 @@ This is adapted code from https://github.com/mewo2/oisin for performing the Wave
 It mashes up sentence fragments from a given text file to produce poems with fixed metric forms. 
 
 # Example output
-<img src="https://raw.githubusercontent.com/marjcuerdo/wfc_poetry/main/output/hp.png" width="362" height="542">
+<img src="https://raw.githubusercontent.com/marjcuerdo/wfc_poetry/main/output/bible.png" width="355" height="305">
 
 [Harry Potter Example - Full Output Text File](https://raw.githubusercontent.com/marjcuerdo/wfc_poetry/main/output/output_harrypotter1_1.txt)  
 [Holy Bible Example - Full Output Text File](https://raw.githubusercontent.com/marjcuerdo/wfc_poetry/main/output/output_bible_1.txt)
