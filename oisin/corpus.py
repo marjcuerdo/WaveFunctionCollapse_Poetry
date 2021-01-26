@@ -56,5 +56,5 @@ def interleave(*args):
 
 
 def load(filename):
-    return tokenize(open(filename).read())
+    return tokenize(open(filename, encoding="utf8").read())
     

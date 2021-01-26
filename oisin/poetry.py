@@ -326,8 +326,9 @@ def balladize(tokens, meter=ballad, step=10, refrain=None, order=3):
     start = 0
     end = step
     stanzas = []
-    while end < len(tokens):
-        while end < len(tokens):
+    length = len(tokens)
+    while end < length:
+        while end < length:
             try:
                 sents = tokens[start:end]
                 if refrain:
