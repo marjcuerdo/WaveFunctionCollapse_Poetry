@@ -84,4 +84,9 @@ This results in:
 
 ![GIF of HP Couplet](https://github.com/marjcuerdo/wfc_poetry/blob/main/output/hp1_couplet.gif)
 
+## Modifying output (advanced)
+Besides the **input text** and **meter type**, the 'balladize()' function takes two additional input parameters that change the resulting poem.
+* The **step** parameter sets the number of sentences used to generate each stanza. Setting step to a larger number results in a poem that skips over more content from the original text, i.e. more sentences were used and mashed up to create each stanza.
+* The **order** parameter determines how long the word sequences are that the program uses to make rhymes. The effects of changing this parameter are subtle, but a larger number seems to result in longer, more complex sentences, while a smaller number seems to produce more nonsensical output.
 
+Note that increasing the **step** and **order** parameters may lead to much longer processing times. The maximum values that worked reasonably well for step and order were 450 and 6, respectively.
