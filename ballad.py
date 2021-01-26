@@ -11,8 +11,8 @@ verse = oisin.iambic(5, 'abcb')
 blank = oisin.iambic(5, 'abcd')
 
 filename = "input/harrypotter1.txt"
-meter_type=ballad
-output = "output/hp1_default.txt"
+meter_type=verse
+output = "output/hp1_verse.txt"
 try:
     filename = sys.argv[1]
     output = sys.argv[2]
@@ -20,10 +20,13 @@ try:
 except IndexError:
     pass
 
+f = open(output, "w")
 ## change style
-oisin.balladize(
-    oisin.load(filename),
-    #meter=oisin.iambic(4, 'aabbccdd'),
-    meter=eval(meter_type),
-    step=50,
-    order=3)
+f.write(
+    "\n\n".join(oisin.balladize(
+        oisin.load(filename),
+        meter=meter_type,
+        step=50, #bigger number = sample is larger, so one stanza covers more of the original text's content
+        order=3)) #bigger number = I think sentences are more complex and coherent
+    )
+f.close()
